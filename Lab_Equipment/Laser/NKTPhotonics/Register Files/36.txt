@@ -1,0 +1,57 @@
+Module type	36				
+Koheras BASIK MIKRO (K0x2)					
+#					
+Readings
+17	Output power	mW	U16	0.01	
+1C	Module temperature	°C	I16	0.1	
+1E	Supply voltage	V	U16	0.001	
+72	Wavelength offset readout	pm	I32	0.1	
+90	Output power monitor (dBm)	dBm	I16	0.01
+#					
+Controls					
+22	Output power setpoint	mW	U16	0.01	
+2A	Wavelength offset	pm	I16	0.1	
+30	Emission	0=off/1=on	U8	1	
+31	Setup bits	hex	H16	1	
+32	Standard wavelength	nm	U32	0.0001	
+3A	Emission delay	sec	U8	0.1	
+65	Module serial number		string		
+8D	User area		string	
+A0	Output power setpoint (dBm)	dBm	I16	0.01
+BE	Shutdown Config flags	hex	H32	1
+#					
+Status bits	66
+0	Emission
+1	Interlock off
+2	-
+3	Sanity 
+4	Module disabled
+5	Supply voltage low
+6	Module temp range
+7	Pump temp high
+8	FL temp range
+9	-
+10	Current limit reached
+11	Waiting for temperature to drop
+12	- 
+13	Fiberlaser searching
+14	- 
+15	Error code present
+16	Error 3 Detected
+17	Error 6 Detected
+18	Error 12 Detected
+19	Error 16 Detected
+#					
+Error code	67				
+0	No error
+2	Interlock
+3	Low voltage
+4	Memory problem
+6	Bad EmissionLED
+7	Board temperature range
+8	Module disabled
+9	FL NTC problem
+12	Pump temperature range
+15	Pump OverCurrent
+16	Sanity
+#					

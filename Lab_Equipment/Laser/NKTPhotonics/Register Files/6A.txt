@@ -1,0 +1,36 @@
+Module type	6A
+NKTP Booster 2013
+#
+Readings		
+10	Stage2 output power	W	U32	0.000001
+11	Stage2 reflection	mW	U16	1
+12	Stage2 input monitor	mW	U16	1
+13	Stage1 reflection	mW	U16	1
+14	Stage1 input monitor	mW	U16	1
+16	External control voltage	V	U16	0.001
+17	External feedback monitor	V	U16	0.001
+1A	Stage2 current monitor	A	U16	0.001
+1D	Stage1 current monitor	A	U16	0.001
+94	Module temperature	°C	I16	0.1
+#
+Status bits	66
+0	Emission
+1	Interlock off
+2	Interlock loop in
+3	Interlock loop out
+4	Module disabled
+5	Bus voltage range
+6	Pump voltage range
+7	Module temp range
+8	Pump temp range
+9	Reflection high
+10	Input power low
+11	Pump current too high
+12	Input monitor saturates
+13	Output monitor saturates
+14	Fan error
+15	Error code present
+#
+Error code	67
+0	No error
+#

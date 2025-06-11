@@ -1,0 +1,64 @@
+Module type	8A
+FS-60 Environment and Shutter Module
+#
+Readings			
+10	Humidity1 Readout	%	U16	1
+11	Humidity2 Readout	%	U16	1
+12	Thermistor1 Temperature	°C	I16	0.1
+13	Thermistor2 Temperature	°C	I16	0.1
+14	Thermistor3 Temperature	°C	I16	0.1
+15	Photodiode Reading	ADC Counts	U16	1
+33	Safety Shutter Sensors	(0-3)	U8	1
+39	Thermistor1 Presence	(0 or 1)	U8	1
+3A	Thermistor2 Presence	(0 or 1)	U8	1
+3B	Thermistor3 Presence	(0 or 1)	U8	1 
+61	Module Type		H16	1
+65	Module Serial Number		string
+62	PCB Revision		U8	1
+64	Firmware Revision		revision
+6D	Bootloader Revision		string
+74	CPU Speed	Hz	U16	1
+80	Runtime	Seconds	U32	1
+#				
+Controls			
+32	Safety Shutter Enable		U8	1
+#				
+Status bits	66
+0	-
+1	Interlock Off
+2	Water1 Flow
+3	Water2 Flow
+4	Module Disabled
+5	Supply Voltage Low
+6	Humidity Out of Range
+7	Therm1 Temp Out Of Range
+8	Therm2 Temp Out Of Range
+9	Therm3 Temp Out Of Range
+10	Laser Safety Shutter Failure
+11	Photodiode Out Of Range
+12	-
+13	Runtime Setup Issue
+14	-
+15	Error Code Present
+#
+Error code	67
+0	No Error
+2	Interlock
+3	Low Voltage
+4	Memory Problem
+8	Module Disabled
+10	Therm1 Temperature
+12	Therm2 Temperature
+13	Therm3 Temperature
+14	Water1 Flow
+15	Humidity
+16	Photodiode
+17	Water2 Flow
+19	Laser Safety Shutter
+20	ADC State Machine
+21	Laser State Machine
+#
+Log
+84	Fast log
+88	Slow log
+#	

@@ -1,0 +1,59 @@
+Module type	3B
+Koheras Harmonik (K592x)
+#
+Readings			
+11	Interbus 12V0 voltage	V	U16	0.001
+12	24V0 supply voltage	V	U16	0.001
+61	Module type		H16	1
+64	Firmware version		revision
+65	Module serial number		string
+6B	Module subtype		U8	1
+6D	Bootloader version		string
+91	Input power	W	F32	1
+9D	Output power	W	F32	1
+BA	TEC temperature	°C	F32	1
+E0.0	Controller firmware version major		U8	1
+E0.1	Controller firmware version minor		U8	1
+#
+Controls
+8D	User text		string
+B9	TEC setpoint	°C	F32	1
+#
+Status bits	66
+0	-
+1	-
+2	TEC temperature error
+3	-
+4	-
+5	Voltage out of range
+6	Temperature out of range
+7	Temperature high (warning)
+8	-
+9	Logging problem
+10	Input power low
+11	-
+12	-
+13	Output power low
+14	Internal communication down
+15	Error code present
+16	Piezo PID enabled
+17	Power reached
+18	TEC enabled
+19	TEC setpoint temperature reached
+20	-
+21	-
+26	Input photo diode high
+27	-
+28	-
+29	Output photo diode high
+#
+Clock	33
+#
+Error code	67
+0	No error
+3	Voltage out of range
+4	Memory problem
+20	ADC failure
+21	Module initialization
+90	MCU error
+#

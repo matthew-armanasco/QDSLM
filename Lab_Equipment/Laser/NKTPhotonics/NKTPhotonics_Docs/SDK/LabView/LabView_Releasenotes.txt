@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+NKTP LabVIEW SDK Changes 2024-06-25
+
+API is recompiled and stored in LabVIEW 2015
+
+New VIs:
+\Device\NKTP_API_DeviceGetAllTypesV2.vi
+\Device\NKTP_API_DeviceGetTypeV2.vi
+\Port\NKTP_API_GetSpecificBusScanningRange.vi
+\Port\NKTP_API_SetSpecificBusScanningRange.vi
+
+New example:
+\Examples\NKTP_API_UserEventExample.vi
+
+Fixed VIs:
+\Port\NKTP_API_GetLegacyBusScanning.vi           VI prototype/connector change
+\Port\NKTP_API_SetLegacyBusScanning.vi           VI prototype/connector change
+-------------------------------------------------------------------------------

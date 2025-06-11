@@ -1,0 +1,2 @@
+When you run the installer you need to specify where the install of python is. You will most likely be using a ancaconder enviroment for python 3.6
+This will be in C:\Users\MODELAB-LP11d\anaconda3\envs\YourPythonEnviromentName. This is the path that should be set in the installer.

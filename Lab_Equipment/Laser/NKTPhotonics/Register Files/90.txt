@@ -1,0 +1,55 @@
+Module type	90
+SHG Oven Controller
+#
+Readings			
+10	Output power	W	U16	1
+16	Humidity	%	U16	0.1
+17	Oven 1 temperature	°C	U32	0.01
+18	Oven 2 temperature	°C	U32	0.01
+1A	Shutter position	(0-4)	U8	1
+61	Module type		H8	1
+62	PCB revision		U8	1
+64	Firmware revision		revision
+#				
+Controls
+30	Enable/Disable Ovens	(0-1)	U8	1
+32	Wavelength	(1-4)	U8	1
+25	Oven 1 Temperature Target	°C	U16	0.01
+26	Oven 1 Engage	0-1	U8	1	
+60	Module address	-	U8	1
+65	Module serial number		string
+80	Runtime	Seconds	U32	1
+#				
+Parameters
+
+#
+Status bits	66
+0	Module Ready
+1	Oven 1 Ready
+3	Error Oven 1 temp sensor
+8	Humidity High
+10	SHG Spot warning
+12	Harmonics Module Busy
+13	Shutter Position Warning
+15	Error Code Present
+#
+Error code	67
+0	No Error
+3	Low Voltage
+4	Memory Problem
+7	Board Temperature
+8	Oven 1 Temperature
+10	Oven 1 NTC
+15	Waveplate Stuck
+16	Output Power
+17	Humidity Error
+18	Shutter in Wrong pos
+19	Laser ON Oven not ready
+21	3V3 Supply Out of Range
+#
+Access	63
+#
+Log
+84	Fast log
+88	Slow log
+#	

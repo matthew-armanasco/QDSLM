@@ -1,0 +1,109 @@
+Module type	8B
+aeroPULSE G3
+#
+Readings			
+B6.0	Stretcher D2 Current Value		F32	1
+B6.1	Stretcher D3 Current Value		F32	1
+B6.2	Stretcher D4 Current Value		F32	1
+B6.4	Stretcher D5 Current Value		F32	1
+B6.3	Stretcher WL Offset Current Value		F32	1
+EB	Peak Power Reading	arb.	U16	0.1
+E8	Average Power Monitor reading	W	U16	0.1
+EA	Peak Power Merit	Peak/Average	U16	0.1
+97	Actual AOM1 rep rate	kHz	U32	0.001
+98	Actual AOM2 rep rate	kHz	U32	0.001
+11	Board temperature	°C	I16	0.1
+64	Firmware revision		revision
+F0	F1 TPSR coeffs descriptor		string
+F1	F2 TPSR coeffs descriptor		string
+F2	F3 TPSR coeffs descriptor		string
+F9	Autotune result descriptor		string
+#
+Controls
+30	Emission	(0=Off/1=Seed/2=Preamp/3=Booster Stage 1/4=Booster Stage 2/5=Booster2/6=Femtoplane Slab Amplifier)	U8	1
+32	Interlock	(>1=Reset Interlock)	U16	1
+37	Final Stage Drive Current	%	U16	0.1
+99	Output level	%	U16	0.1
+E6	Shutter Enable/Disable	0=Disable, >0=Enable	U8	1
+38	Repetition Rate	kHz	U32	0.001
+B1	Stretcher D2 Set Point		F32	1
+B2	Stretcher D3 Set Point		F32	1
+B3	Stretcher D4 Set Point		F32	1
+21	Stretcher D5 Set Point		F32	1
+B4	Stretcher WL Offset Set Point		F32	1
+B5	Stretcher Set Point Update	Send set point values to stretcher	U8	1
+3F	Reset Stretcher		U8	1
+B0	Save Stretcher Set Point Start Up Values		U8	1
+B8	Recall Factory Set Point Values	(1-3, 99)	U8	1
+B9	Save User Set Point Values	(1-6)	U8	1
+BA	Recall User Set Point Values	(1-6)	U8	1
+E7	Stretcher Autotune Control	(0=Idle, 1=run/running, 2=success, 3=timeout, 4=NoEmission, 5=lowPeak, 9=UserHalt)	U8	1
+76	Stretcher Invalid Profile Config	(0=No issue/1=Invalid Profile Config Selected)	U8	1
+77	Stretcher Set Point Values Unreachable	Clear this register to restore last working set points	U8	1
+90	Trigger mode enable	0 = off, 1 = software button, 2 = external	U8	1
+91	Trigger buffer output enable	0 = Buffer disabled, 1 >= External Trigger enabled	U8	1
+92	Gate buffer output enable	0 = Buffer disabled, 1 >= External Gating enabled	U8	1
+93	Initiate software trigger		U8	1
+94	External analog control		U8	1
+9B	AOM 2 Number of Pulses		U16	1
+39	External Sync/NIM 2 delay	dec	U16	1
+3A	NIM 1 delay		U16	1
+3B	User Config	0 = NIM, 1 = Positive logic trigger output	U16	1
+8D	User text		string
+36	Watchdog interval	Seconds	U8	1
+F3	U1 stretcher descriptor		string
+F4	U2 stretcher descriptor		string
+F5	U3 stretcher descriptor		string
+F6	U4 stretcher descriptor		string
+F7	U5 stretcher descriptor		string
+F8	U6 stretcher descriptor		string
+#
+Status bits	66
+0	Emission
+1	Interlock relays off
+2	Interlock supply voltage low 
+3	Interlock loop open
+4	Output Control signal low
+5	Supply voltage low
+6	Inlet temperature out of range
+7	Clock battery low voltage
+8	Date/time not set
+9	microSD card missing
+10	Seed calibration necessary
+11	Seed calibrating
+12	-
+13	CRC error on startup
+14	Log error code present
+15	System error code present
+16	Stretcher Device Active
+17	Stretcher Device Ready
+18	Stretcher D5 available
+19	-
+20	Stretcher Command Error
+21	Stretcher Invalid EEPROM
+22	Stretcher Invalid Profile Config
+23	Stretcher Set Point Values Unreachable
+24	AC Okay Failure
+#
+Error code	67
+0	No Error
+2	Interlock
+3	Low Voltage
+4	Memory Problem
+5	Watchdog
+6	Bad Emission LED
+7	Board Temperature Out of Range
+8	Module Disabled
+16	Chiller Temperature Mode Invalid
+17	ADC State Machine
+18	RTC State Machine
+19	TPSR State Machine
+20	AC Power
+128	Seed Module Not Present
+#
+Clock	33
+#
+Log
+84	Data log
+88	System log
+#

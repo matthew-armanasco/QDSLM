@@ -1,0 +1,56 @@
+Module type	35
+Koheras BOOSTIK Line Card (K2x2x)
+#
+Readings
+17	Output power	mW	U16	0.1
+1C	Heatsink temperature	°C	I16	0.1	
+1E	Supply voltage	V	U16	0.001	
+90	Output power monitor (dBm)	dBm	I16	0.01
+61	Module type		H16	1
+64	Firmware version		revision
+65	Module serial number		string
+#				
+Controls
+22	Output power setpoint	mW	U16	0.1
+30	Emission	off/on	U8	1	
+A0	Output power setpoint (dBm)	dBm	I16	0.01
+8D	User area		string	
+#				
+Status bits	66
+0	Emission status
+1	Interlock off
+2	-
+3	Sanity check
+4	Module disabled
+5	Supply voltage low
+6	Module temp range
+7	Pump temp high
+8	Input power low
+9	Trig IN
+10	Current limit reached
+11	Waiting for temperature to drop
+12	St1 Current High
+13	St2 Current High
+14	Emission LED BAD
+15	Error code present
+#
+Error code	67
+0	No error				
+2	Interlock				
+3	Low voltage				
+4	Memory problem				
+5	Watchdog				
+6	Bad EmissionLED				
+7	BoardTemperatur rage
+8	Module disabled
+12	Pump temperature range				
+15	Pump over current
+16	Sanity
+17 	stage 1 startup error
+48	Reflection detected
+60	Stage1 input power loss
+62	Stage2 input power loss
+64	Max Output power detected
+65	Stage1 high current
+66	Stage2 high current
+#

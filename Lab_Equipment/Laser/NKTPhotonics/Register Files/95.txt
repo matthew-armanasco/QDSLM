@@ -1,0 +1,182 @@
+Module type	95
+Origami XPS
+#
+Readings			
+01	Main FSM state		U8	1
+02	Regen pulse repetition rate	Hz	U32	1
+03	Output pulse repetition rate	Hz	U32	1
+10	Output power	W	U16	0.001
+11	Output energy	nJ	U16	10
+13	Pump temperature	°C	U16	0.01
+14	Cage temperature	°C	U16	0.01
+15	Gain crystal temperature	°C	U16	0.01
+16	Bottom Heater temperature	°C	U16	0.01
+17	Heat sink temperature	°C	U16	0.01
+18	Seed laser diode temperature	°C	U16	0.01
+1B	Regen Photodiode power	W	U16	0.001
+1C	Seed Photodiode power	mW	U16	1
+1D	TPA Photodiode	a.u.	U16	1
+1E	Laser diode driver current	A	U16	0.001
+60	Module address		U8	1
+61	Module type	hex	H16	1
+64	Firmware version	ASCII	revision	1
+65	Module serial number	ASCII	string	1
+66	Status bits		U32	1
+6A	Preloader version	ASCII	revision	
+6D	Bootloader version	ASCII	string	1
+70	Read all measurements	same as in 0x10 - 0x1F	U16	1
+71.0	Mod Error: Timing board	dec	U8	1
+71.1	Mod Error: Laser diode driver	dec	U8	1
+71.2	Mod Error: Main TEC controller	dec	U8	1
+71.3	Mod Error: Harmonic generation module	dec	U8	1
+71.4	Mod Error: Pulse duration positioner	dec	U8	1
+80	Runtime	sec	U32	1
+83.0	RTC second	s [0-59]	U8	1
+83.1	RTC minute	min [0-59]	U8	1
+83.2	RTC hours	h [0-23]	U8	1
+83.3	RTC day	d [1-31]	U8	1
+83.4	RTC month	M [1-12]	U8	1
+83.5	RTC year	Y [0-99]	U8	1
+84	Fast Log head		U32	1
+85	Fast Log tail		U32	1
+86	Fast Log Interval		U16	1
+87	Fast Log read data entry		U8	1
+88	Slow Log Head		U32	1
+89	Slow Log Tail		U32	1
+8A	Slow Log Interval		U16	1
+8B	Slow Log read data entry		U8	1
+8E.0	Fast log count		U32	
+8E.1	Slow log count		U32	
+B3.0	MAC address	[00-FF]	H8	1
+B3.1	MAC address	[00-FF]	H8	1
+B3.2	MAC address	[00-FF]	H8	1
+B3.3	MAC address	[00-FF]	H8	1
+B3.4	MAC address	[00-FF]	H8	1
+B3.5	MAC address	[00-FF]	H8	1
+#				
+Controls			
+05	Relative output power	[0-4000]	U16	1
+20	Output power	W	U16	0.001
+21	Output energy	nJ	U16	10
+30	Main FSM target state	[1,3,5,6]	U8	1
+32	Interlock		H16	1
+34	Shutter control	[0,1]	U8	1
+35	Pulse repetition rate index	[0-12]	U8	1
+36	Frequency division factor	[1-1000000]	U32	1
+37	Ext. analog modulation enable	[0,1]	U8	1
+38	Digital gate logic polarity	[0,1]	U8	1
+39	Serial port communication protocol	[0: NKTP Bus / 1: CLI] 	U8	1
+3F.0	Pulse repetition rate index		U8	1
+3F.1	Pulse repetition rate divider LSB		H8	1
+3F.2	Pulse repetition rate divider		H8	1
+3F.3	Pulse repetition rate divider		H8	1
+3F.4	Pulse repetition rate divider MSB		H8	1
+67	Error code		U8	1
+8F	Log entry read index		U32	1
+B0.0	Source IP Addr0	[0-255]	U8	1
+B0.1	Source IP Addr1	[0-255]	U8	1
+B0.2	Source IP Addr2	[0-255]	U8	1
+B0.3	Source IP Addr3	[0-255]	U8	1
+B1.0	Gateway Addr0	[0-255]	U8	1
+B1.1	Gateway Addr1	[0-255]	U8	1
+B1.2	Gateway Addr2	[0-255]	U8	1
+B1.3	Gateway Addr3	[0-255]	U8	1
+B2.0	Subnet mask Addr0	[0-255]	U8	1
+B2.1	Subnet mask Addr1	[0-255]	U8	1
+B2.2	Subnet mask Addr2	[0-255]	U8	1
+B2.3	Subnet mask Addr3	[0-255]	U8	1
+B4	Source port		U16	1
+B5	Static/DHCP	[1: Static; 2: DHCP]	U8	1
+B6	Host name		string	1
+B7	Client identifier		string	1
+B8	Keep alive		U8	1
+B9	Option bits		U16	1
+BA	Inactivity timeout	[0: disable / 1-255secs]	U8	1
+BB	UDP device discovery	[0: disable / 1: enable]	U8	1
+#				
+Parameters
+#				
+Status bits	66
+0	Emission On
+1	Main interlock open
+2	Switching pulse repetition rate
+3	Auxiliary interlock open
+5	Supply Voltage Low
+6	Temperature out of range
+7	General Device status
+8	Error status LDD
+9	Error status TEC
+10	Error status Harmonic Module
+11	Seeder deactivated
+12	Timing Board deactivated
+14	Module Error present
+15	Error Present
+16	Temperature Bottom Heater out of range
+17	Temperature Cage Heater out of range
+18	Temperature Gain Crystal Heater out of range
+19	Temperature Pump Heater out of range
+20	Temperature Heatsink out of range
+21	Temperature Seeder out of range
+22	Temperature Harmonic Module out of range
+25	High power pump current limit
+26	Power supply monitor not detected
+#
+Error code	67
+0	No error
+2	Interlock
+3	Low voltage
+4	Memory problem
+5	Communication Watchdog
+9	Timing board Module Error
+10	Timing board Init Error
+11	Timing board Setup Error
+12	Timing board AOMLIN error
+13	Timing board Communication Error
+14	Seed Temperature Error
+17	Seed Thermal Fault
+18	Seed Setup Error
+19	DualTEC Temp out of range CH1
+20	DualTEC Temp out of range CH2
+21	DualTEC Driver Fault CH1
+22	DualTEC Driver Fault CH2
+23	High Power TEC Init Error
+24	High Power TEC Module Error
+25	High Power TEC COM error
+26	High Power TEC Temp out of range CH1
+27	High Power TEC Temp out of range CH2
+28	High Power TEC Temp out of range Monitor
+29	High Power LDD Init Error
+30	High Power LDD Module Error
+31	High Power LDD COM error
+32	High Power LDD Current Limit Error
+33	NKTHG Module Error
+34	NKTHG Init error
+35	NKTHG DWLS failure
+36	Positioner Module Error
+37	Positioner Init error
+38	Positioner COM error
+39	Fast Repetition Rate Switching Failed
+40	Internal IBUS Interlock
+41	Temperature Timeout
+42	RS485 COM error
+43	Seed power out of range error
+44	Seed Guard triggered
+45	Output power out of range error
+46	Regen PD power out of range error
+47	Regen PD Sanity check error
+48	Regen PD Guard triggered
+49	PRR Control Setup Error
+50	PRR Control Invalid parameter
+51	PRR Control COM error
+52	Timing board Ref clock error
+53	Timing board Ref PLL error
+54	Timing board DDS PLL error
+55	Timing board Ref clock monitor error
+56	Power Rampup Timeout
+57	Seed Disable error
+58	Shutter Timeout
+59	Power Lock COM error
+60	ADC IC55 Init Error
+61	ADC IC9 Init Error
+62	Regen ADC reference error
+#

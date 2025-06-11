@@ -1,0 +1,41 @@
+Module type	8F
+SuperK EVO v2
+#
+Readings			
+17	Pump temperature	°C	I16	0.1
+1D	24V supply	V	U16	0.001
+65	Module serial number		string
+94	External power feedback	V	U16	0.001
+#				
+Controls			
+21	Output power setpoint	%	U16	0.1
+30	Emission off/on	(0-2)	U8	1
+31	Setup bits	-	U8	1
+32	Interlock	-	H16	1
+36	Watchdog timer	s	U8	1
+3B	NIM delay	-	U16	1
+3D	UserSetupBits	hex	H16	1
+3E	Feedback regulating interval	50 ms	U8	1
+8D	User area		string	
+#				
+Status bits	66
+0	Emission
+1	Interlock off
+2	Interlock power failure
+3	Remote interlock
+4	-
+5	Supply voltage low
+6	Module temp range
+7	-
+8	-
+9	-
+10	-
+11	-
+12	-
+13	-
+14	Log error
+15	Error code present
+#
+Error code	67
+0	No error
+#	

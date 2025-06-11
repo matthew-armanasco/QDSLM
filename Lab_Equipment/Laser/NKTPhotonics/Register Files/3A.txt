@@ -1,0 +1,72 @@
+Module type	3A
+Koheras BOOSTIK HP (K533x / K833x)
+#
+Readings			
+17	Interbus12V0 voltage	V	U16	0.001
+1E	Output power monitor (dBm)	dBm	I16	0.01
+1F	Output power monitor (W)	W	U16	0.01
+94	Fan 1 speed	RPM	U16	1
+95	Fan 2 speed	RPM	U16	1
+61	Module type		H16	1
+64	Firmware version		revision
+65	Module serial number		string
+6F	System serial number		string
+#
+Controls
+2B.0	Input wavelength	nm	U16	1
+2B.1	Input wavelength fraction	nm	U16	0.0001
+2E	Output power setpoint (dBm)	dBm	I16	0.01
+2F	Output power setpoint (W)	W	U16	0.01
+30	Emission on/off	0/1	U8	1
+31	Setup bits	bits	H16	1
+34	Watchdog timeout	s	U8	1
+35	LED intensity	%	U8	1
+8D	User text		string
+#				
+Parameters
+5B	PS Input wavelength
+#				
+Status bits	66
+0	Emission on
+1	Interlock off
+2	-
+3	-
+4	Module disabled
+5	Voltage out of range
+6	Temperature out of range
+7	Temperature high (warning)
+8	Input power low
+9	Fan error
+10	Input wavelength out of range
+11	-
+12	Submodule communication problem
+13	Submodule initialization problem
+14	Submodule firmware upload needed
+15	Error code present
+16	Board temperature out of range
+17	System temperature out of range
+31	Error not acknowledged
+#
+Error code	67
+0	No error
+1	reserved
+2	Interlock off
+3	Voltage out of range
+4	Memory problem
+5	Watchdog timeout
+6	Bad emission LED
+7	Board temperature out of range
+8	Module disabled
+9	Fan error
+16	Bad power LED	
+17	Bad status LED	
+20	ADC failure	
+21	Module initialization error	
+24	Submodule firmware upload needed	
+25	Internal communication error
+26	Internal communication timeout
+27	Timeout during emission on sequence	
+30	Temperature out of range	
+50	Input wavelength out of range	
+60	Input power low	
+#

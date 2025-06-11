@@ -1,0 +1,75 @@
+Module type	99
+REDBOX
+#
+Readings			
+61	Module type		H8	1
+64	Firmware revision		revision
+76	PD1 power readout	µW	U32	0.001
+77	Estimated maximum power	µW	U32	0.001
+80	Runtime	Seconds	U32	1
+EE	Spectrometer total power	µW	U32	0.1
+#				
+Controls
+30	Shutter setup	-	U8	1
+31	Power setup	-	U16	1
+32.0	Center wavelength	nm	U16	0.1
+32.1	Bandwidth	nm	U16	0.1
+32.1	Power	mW	U32	0.000001
+33	ND filter attenuation	dB	I16	0.001
+35.0	Maximum bandwidth	nm	U16	0.1
+35.1	Minimum bandwidth	nm	U16	0.1
+60	Module address	dec	U8	1
+8D	User text		string
+F0	Script start/stop	-	H32	1
+F6	Script status bits	-	H16	1
+F7	Script error code	-	U8	1
+#				
+Parameters
+#
+Status bits	66
+0	Shutter open
+1	Interlock off
+2	Interlock loop in
+3	Interlock loop out
+4	-
+5	Supply voltage low
+6	Board temp range
+7	Driver temp range
+8	Beam dump temp range
+9	Spectrometer scanning
+10	Valid image in buffer
+11	Photodiode saturated
+12	Output OK
+13	-
+14	-
+15	Error code present
+16	LWP moving
+17	SWP moving
+18	Blocking moving
+19	ND moving
+20	Shutter moving
+21	LWP home sensor
+22	SWP home sensor
+23	Blocking home sensor
+24	ND home sensor
+25	Shutter home sensor
+26	Spectrum analysis warning / error
+27	-
+28	Motor stall event
+29	Filter settings changed
+30	-
+31	Stepper motor speed degraded
+#
+Error code	67
+3	Supply voltage out of range (24 V too low or not PowerGood)
+4	Memory problem (FRAM issue)
+7	Board temperature out of range (too high or too low)
+8	ADC failure (sampling timeout)
+9	Module initialization failed
+80	Homing failed, any motor
+81	Motor stalled, linear stages
+82	Spectrum analysis has detected to much power outside passband
+83	Spectrum analysis has detected too high tolerance on power output
+84	Spectrum analysis has detected error in the passband values
+#
+Log

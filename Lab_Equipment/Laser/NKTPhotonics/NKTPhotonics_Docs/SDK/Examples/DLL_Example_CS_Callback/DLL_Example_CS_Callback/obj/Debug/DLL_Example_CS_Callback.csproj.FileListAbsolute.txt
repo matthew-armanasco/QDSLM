@@ -1,0 +1,10 @@
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_CS_Callback\DLL_Example_CS_Callback\bin\Debug\DLL_Example_CSharp_Callback.exe.config
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_CS_Callback\DLL_Example_CS_Callback\bin\Debug\DLL_Example_CSharp_Callback.exe
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_CS_Callback\DLL_Example_CS_Callback\bin\Debug\DLL_Example_CSharp_Callback.pdb
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_CS_Callback\DLL_Example_CS_Callback\obj\Debug\DLL_Example_CS_Callback.csproj.AssemblyReference.cache
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_CS_Callback\DLL_Example_CS_Callback\obj\Debug\DLL_Example_CS_Callback.Form1.resources
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_CS_Callback\DLL_Example_CS_Callback\obj\Debug\DLL_Example_CSharp_Callback.Properties.Resources.resources
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_CS_Callback\DLL_Example_CS_Callback\obj\Debug\DLL_Example_CS_Callback.csproj.GenerateResource.cache
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_CS_Callback\DLL_Example_CS_Callback\obj\Debug\DLL_Example_CS_Callback.csproj.CoreCompileInputs.cache
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_CS_Callback\DLL_Example_CS_Callback\obj\Debug\DLL_Example_CSharp_Callback.exe
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_CS_Callback\DLL_Example_CS_Callback\obj\Debug\DLL_Example_CSharp_Callback.pdb

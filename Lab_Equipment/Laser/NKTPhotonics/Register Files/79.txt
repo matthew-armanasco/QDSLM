@@ -1,0 +1,70 @@
+Module type	79
+Femtoplane Pulse Picker
+#
+Readings
+10	Peak Monitor Readout		U16	1			
+3A	CPLD Alarm Latches	hex	H8	1
+75	Number of Pulses Limit		U16	1
+B9	Seed Frequency	MHz	U32	0.000001
+B6	Actual Internal Pulse Picker Rep Rate	kHz	U32	0.001
+B7	Internal Pulse Picker Rep Rate Ratio		U16	1
+BA	Actual External Pulse Picker Rep Rate	kHz	U32	0.001
+BB	External Pulse Picker Rep Rate Ratio		U16	1
+3C	CPLD Firmware Version		U8	1
+61	Module Type		H16	1
+65	Module Serial Number		string
+62	PCB Revision		U8	1
+64	Firmware Revision		revision
+6D	Bootloader Revision		string
+74	CPU Speed	Hz	U16	1
+80	Runtime	Seconds	U32	1
+#				
+Controls			
+30	Internal Pulse Picker Rep Rate	kHz	U32	0.001
+31	Internal Pulse Picker Rep Width		U16	1
+76	Enable Burst Mode		U8	1
+33	External Pulse Picker Rep Rate	kHz	U32	0.001
+34	External Pulse Picker Number of Pulses		U16	1
+35	External Pulse Picker Sync Delay Line		U16	1
+77	Trigger Mode	0-2	U8	1
+78	Trigger Buffer Output Enable	0=Buffer Disabled, >0=Buffer Enabled	U8	1
+79	Gate Buffer Output Enable	0=Buffer Disabled, >0=Buffer Enabled	U8	1
+7A	AOM Enable	0=AOM off, >0 AOM Running as per settings	U8	1
+8C	AOM2 Output Power	%	U16	0.1
+39	Initiate Software Trigger		U8	1
+B1	Try Internal Rep Rate Frequency	kHz	U32	0.001
+B2	External Analog Control		U8	1
+B3	Clear CPLD Alarm Latches		U8	1
+B4	Reset CPLD		U8	1
+#
+Status bits	66
+0	-
+1	Interlock Off
+2	-
+3	-
+4	Module Disabled
+5	Supply Voltage Low
+6	-
+7	CPLD External Oscillator
+8	QSD Event
+9	Double Pulse Event
+10	CPLD Alarms Event No Comms Available
+11	CPLD Communications Inactive
+12	Runtime Setup Issue
+13	Peak Monitor Low
+14	-
+15	Error code present
+#
+Error code	67
+0	No Error
+2	Interlock
+3	Low Voltage
+4	Memory Problem
+8	Module Disabled
+16	QSD Fired
+17	Double Pulse Detector Fired
+18	CPLD External Oscillator Failed
+19	CPLD Alarms Latched and Comms Inactive
+20	ADC State Machine
+21	Peak Monitor Output Low
+#

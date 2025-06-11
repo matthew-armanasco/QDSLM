@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network>
+    <ProxyType>1</ProxyType>
+    <Ftp>
+        <Host></Host>
+        <Port>0</Port>
+        <Username></Username>
+        <Password></Password>
+    </Ftp>
+    <Http>
+        <Host></Host>
+        <Port>0</Port>
+        <Username></Username>
+        <Password></Password>
+    </Http>
+    <Repositories/>
+    <LocalCachePath>C:/Users/Experiment/AppData/Local/cache\qt-installer-framework\8f2eda26-afad-37a0-89c1-88034d30fc1c</LocalCachePath>
+</Network>

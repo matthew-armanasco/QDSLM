@@ -1,0 +1,47 @@
+Module type	81
+Ethernet Module
+#
+Readings	
+64	Firmware revision		revision
+#				
+Controls			
+B0.0	IP address (0)		U8	1
+B0.1	IP address (1)		U8	1
+B0.2	IP address (2)		U8	1
+B0.3	IP address (3)		U8	1
+B1.0	Gateway (0)		U8	1
+B1.1	Gateway (1)		U8	1
+B1.2	Gateway (2)		U8	1
+B1.3	Gateway (3)		U8	1
+B2.0	Subnet mask (0)		U8	1
+B2.1	Subnet mask (1)		U8	1
+B2.2	Subnet mask (2)		U8	1
+B2.3	Subnet mask (3)		U8	1
+B3.0	MAC address (0)		H8	1
+B3.1	MAC address (1)		H8	1
+B3.2	MAC address (2)		H8	1
+B3.3	MAC address (3)		H8	1
+B3.4	MAC address (4)		H8	1
+B3.5	MAC address (5)		H8	1
+B4	System port		U16	1
+B5	DHCP 1=static 2=DHCP		U8	1
+B6	Host name	OP.12	string
+#				
+Status bits	66
+0	Ethernet Connected
+1	Got IP
+2	Ip Changed
+3	DHCP Failed
+4	Waits for socket connection
+5	Socket connection
+6	Socket Closed
+7	-
+8	-
+9	-
+10	-
+11	DHCPStopped
+12	-
+13	0 10 / 1 100 Mbit/s
+14	0 half/ 1 Full Duplex
+15	Error code present
+#

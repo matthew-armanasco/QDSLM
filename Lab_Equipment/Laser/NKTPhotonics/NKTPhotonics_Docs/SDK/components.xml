@@ -1,0 +1,42 @@
+<Packages>
+    <ApplicationName>NKT Photonics SDK</ApplicationName>
+    <ApplicationVersion>1.0.0</ApplicationVersion>
+    <Package>
+        <Name>com.nktphotonics.sw.sdk</Name>
+        <Title>NKTP SDK Content</Title>
+        <Description>NKT Photonics SDK Content contains Examples, Documentation, LabVIEW API, LabVIEW Examples and the NKTPDLL library.</Description>
+        <SortingPriority>0</SortingPriority>
+        <TreeName moveChildren="false"></TreeName>
+        <Version>2.1.15.2102</Version>
+        <LastUpdateDate></LastUpdateDate>
+        <InstallDate>2025-02-27</InstallDate>
+        <Size>89266057</Size>
+        <ForcedInstallation>true</ForcedInstallation>
+    </Package>
+    <Package>
+        <Name>com.nktphotonics.sw.sdk.generic</Name>
+        <Title>NKTP SDK Generic UI</Title>
+        <Description>NKT Photonics Generic User Interface, a LabVIEW application.</Description>
+        <SortingPriority>0</SortingPriority>
+        <TreeName moveChildren="false"></TreeName>
+        <Version>17.0.0.209</Version>
+        <LastUpdateDate></LastUpdateDate>
+        <InstallDate>2025-02-27</InstallDate>
+        <Size>325098384</Size>
+        <Dependencies>com.nktphotonics.sw.sdk</Dependencies>
+        <Checkable>true</Checkable>
+    </Package>
+    <Package>
+        <Name>com.nktphotonics.sw.sdk.silabs</Name>
+        <Title>NKTP SDK Silabs driver</Title>
+        <Description>NKT Photonics SDK Silicon Laboraroies USB Driver.</Description>
+        <SortingPriority>0</SortingPriority>
+        <TreeName moveChildren="false"></TreeName>
+        <Version>11.2.0.167</Version>
+        <LastUpdateDate></LastUpdateDate>
+        <InstallDate>2025-02-27</InstallDate>
+        <Size>10490791</Size>
+        <Dependencies>com.nktphotonics.sw.sdk</Dependencies>
+        <Checkable>true</Checkable>
+    </Package>
+</Packages>

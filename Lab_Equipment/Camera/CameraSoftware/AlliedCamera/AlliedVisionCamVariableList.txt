@@ -1,0 +1,27 @@
+
+['AcquisitionFrameCount', 
+'AcquisitionFrameRate', 
+'AcquisitionFrameRateEnable', 
+'AcquisitionFrameRateMode', 
+'AcquisitionMode', 
+'AcquisitionStart', 
+'AcquisitionStatus', 
+'AcquisitionStatusSelector', 
+'AcquisitionStop', 
+'AdaptiveNoiseSuppressionFactor', 
+'AutoModeRegionHeight', 
+'AutoModeRegionOffsetX', 
+'AutoModeRegionOffsetY', 
+'AutoModeRegionSelector', 
+'AutoModeRegionWidth', 
+'BinningHorizontal', 
+'BinningHorizontalMode', 
+'BinningSelector',
+'BinningVertical', 
+'BinningVerticalMode',
+ 'BlackLevel', 
+ 'BlackLevelSelector', 
+ 'ChunkImage', '
+ ContrastBrightLimit', 
+ 'ContrastDarkLimit', 'ContrastEnable', 'ContrastShape', 'ConvolutionMode', 'CorrectionDataSize', 'CorrectionEntryType', 'CorrectionMode', 'CorrectionSelector', 'CorrectionSet', 'CorrectionSetDefault', 'CounterDuration', 'CounterEventActivation', 'CounterEventSource', 'CounterReset', 'CounterResetActivation', 'CounterResetSource', 'CounterSelector', 'CounterStatus', 'CounterTriggerActivation', 'CounterTriggerSource', 'CounterValue', 'CounterValueAtReset', 'CustomConvolutionValue', 'CustomConvolutionValueSelector', 'DeviceFamilyName', 'DeviceFirmwareID', 'DeviceFirmwareIDSelector', 'DeviceFirmwareUploadType', 'DeviceFirmwareVersion', 'DeviceFirmwareVersionSelector', 'DeviceGenCPVersionMajor', 'DeviceGenCPVersionMinor', 'DeviceIndicatorLuminance', 'DeviceIndicatorMode', 'DeviceLinkCommandTimeout', 'DeviceLinkSpeed', 'DeviceLinkThroughputLimit', 'DeviceLinkThroughputLimitMode', 'DeviceManufacturerInfo', 'DeviceModelName', 'DevicePowerSavingMode', 'DeviceReset', 'DeviceSFNCVersionMajor', 'DeviceSFNCVersionMinor', 'DeviceSFNCVersionSubMinor', 'DeviceScanType', 'DeviceSerialNumber', 'DeviceTLVersionMajor', 'DeviceTLVersionMinor', 'DeviceTemperature', 'DeviceTemperatureSelector', 'DeviceUserID', 'DeviceVendorName', 'DeviceVersion', 'ExposureActiveMode', 'ExposureAuto', 'ExposureAutoMax', 'ExposureAutoMin', 'ExposureMode', 'ExposureTime', 'FileAccessBuffer', 'FileAccessLength', 'FileAccessOffset', 'FileOpenMode', 'FileOperationExecute', 'FileOperationResult', 'FileOperationSelector', 'FileOperationStatus', 'FileProcessStatus', 'FileSelector', 'FileSize', 'FileStatus', 'Gain', 'GainAuto', 'GainAutoMax', 'GainAutoMin', 'GainSelector', 'Gamma', 'Height', 'HeightMax', 'IntensityAutoPrecedence', 'IntensityControllerAlgorithm', 'IntensityControllerOutliersBright', 'IntensityControllerOutliersDark', 'IntensityControllerRate', 'IntensityControllerRegion', 'IntensityControllerSelector', 'IntensityControllerTarget', 'IntensityControllerTolerance', 'LUTEnable', 'LUTIndex', 'LUTSelector', 'LUTValue', 'LUTValueAll', 'LineDebounceDuration', 'LineDebounceMode', 'LineInverter', 'LineMode', 'LineSelector', 'LineSource', 'LineStatus', 'LineStatusAll', 'MultipleRegionArrangement', 'MultipleRegionEnable', 'OffsetX', 'OffsetY', 'PayloadSize', 'PixelSize', 'ReverseX', 'ReverseY', 'SensorBitDepth', 'SensorHeight', 'SensorShutterMode', 'SensorWidth', 'SequencerConfigurationMode', 'SequencerFeatureEnable', 'SequencerFeatureSelector', 'SequencerMode', 'SequencerPathSelector', 'SequencerSetActive', 'SequencerSetLoad', 'SequencerSetNext', 'SequencerSetSave', 'SequencerSetSelector', 'SequencerSetStart', 'SequencerTriggerActivation', 'SequencerTriggerSource', 'SerialBaudRate', 'SerialHubEnable', 'SerialParityBit', 'SerialRxData', 'SerialRxSize', 'SerialRxWaiting', 'SerialStopBits', 'SerialTxData', 'SerialTxLock', 'SerialTxRemaining', 'SerialTxSize', 'Sharpness', 'SoftwareSignalPulse', 'SoftwareSignalSelector', 'SubRegionHeight', 'SubRegionMode', 'SubRegionOffsetX', 'SubRegionOffsetY', 'SubRegionSelector', 'SubRegionWidth', 'TLParamsLocked', 'TestPendingAck', 'TimerDelay', 'TimerDuration', 'TimerReset', 'TimerSelector', 'TimerStatus', 'TimerTriggerActivation', 'TimerTriggerSource', 'TimestampLatch', 'TimestampLatchValue', 'TimestampReset', 'TransferControlMode', 'TransferQueueCurrentBlockCount', 'TransferQueueMaxBlockCount', 'TransferSelector', 'TriggerActivation', 'TriggerDelay', 'TriggerMode', 'TriggerSelector', 'TriggerSoftware', 'TriggerSource', 'UserSetDefault', 'UserSetLoad', 'UserSetSave', 'UserSetSelector', 'Width', 'WidthMax', '_Camera__access_mode', '_Camera__context_cnt', '_Camera__info', '_Camera__interface', '_Camera__local_device', '_Camera__streams', '_FeatureContainer__context_cnt', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__enter__', '__eq__', '__exit__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_attach_feature_accessors', '_close', '_context_entered', '_disconnected', '_feats', '_handle', '_open', '_remove_feature_accessors', '_update_permitted_access_modes', 'get_access_mode', 'get_all_features', 'get_extended_id', 'get_feature_by_name', 'get_features_by_category', 'get_features_by_type', 'get_features_selected_by', 'get_frame', 'get_frame_generator', 'get_frame_with_context', 'get_id', 'get_interface', 'get_interface_id', 'get_local_device', 'get_model', 'get_name', 'get_permitted_access_modes', 'get_pixel_format', 'get_pixel_formats', 'get_serial', 'get_streams', 'get_transport_layer', 'is_streaming', 'load_settings', 'queue_frame', 'read_memory', 'save_settings', 'set_access_mode', 'set_pixel_format', 'start_streaming', 'stop_streaming', 'write_memory']
+

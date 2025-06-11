@@ -1,0 +1,142 @@
+************************************* Invoked: Thu Feb 27 11:44:40 2025
+[0] Arguments: C:\Users\Experiment\Downloads\SDK Current\SDK_Installer_2.1.15.2102.exe
+[19] Operations sanity check succeeded.
+[53] Using metadata cache from "C:/Users/Experiment/AppData/Local/cache\\qt-installer-framework\\8f2eda26-afad-37a0-89c1-88034d30fc1c"
+[53] Found 0 cached items.
+[53] Language: en-GB
+[1967] Fetching latest update information...
+[1980] Loading component scripts...
+[16312] Components added as dependency for "com.nktphotonics.sw.sdk.generic":
+com.nktphotonics.sw.sdk 
+Components that have resolved dependencies:
+com.nktphotonics.sw.sdk.generic 
+com.nktphotonics.sw.sdk.silabs
+[16313] Installation space required: "661.17 MB" Temporary space required: "256.00 MB" Local repository size: "0.00 bytes"
+[16315] Cache and install directories are on the same volume. Volume mount point: "C:\\" Free space available: "81.14 GB"
+[17514] perform  operation: Mkdir
+[17514] 	- arguments: C:/Users/Public/Documents/NKT Photonics
+[17514] Done
+[17514] backup  operation: Mkdir
+[17514] 	- arguments: C:/Users/Public/Documents/NKT Photonics/SDK
+[17515] Done
+[17515] perform  operation: Mkdir
+[17515] 	- arguments: C:/Users/Public/Documents/NKT Photonics/SDK
+[17515] Done
+[17516] Preparing the installation...
+[17516] Install size: 3 components
+[17543] Installing Generic User Interface
+[17545] Installing version 11.3.0 of the Silabs driver (Win10 & Win11 x64)
+[17545] Preparing to unpack components...
+[17547] backup com.nktphotonics.sw.sdk concurrent operation: Extract
+[17547] 	- arguments: installer://com.nktphotonics.sw.sdk/2.1.15.2102content.7z, C:/Users/Public/Documents/NKT Photonics/SDK
+[17547] Started
+[17547] backup com.nktphotonics.sw.sdk concurrent operation: Extract
+[17547] 	- arguments: installer://com.nktphotonics.sw.sdk/2.1.15.2102Examples.7z, C:/Users/Public/Documents/NKT Photonics/SDK
+[17547] Started
+[17547] backup com.nktphotonics.sw.sdk concurrent operation: Extract
+[17547] 	- arguments: installer://com.nktphotonics.sw.sdk/2.1.15.2102LabView.7z, C:/Users/Public/Documents/NKT Photonics/SDK
+[17547] Started
+[17547] backup com.nktphotonics.sw.sdk concurrent operation: Extract
+[17547] 	- arguments: installer://com.nktphotonics.sw.sdk/2.1.15.2102NKTPDLL.7z, C:/Users/Public/Documents/NKT Photonics/SDK
+[17547] Started
+[17547] backup com.nktphotonics.sw.sdk concurrent operation: Extract
+[17547] 	- arguments: installer://com.nktphotonics.sw.sdk/2.1.15.2102Register Files.7z, C:/Users/Public/Documents/NKT Photonics/SDK
+[17547] Started
+[17548] backup com.nktphotonics.sw.sdk.generic concurrent operation: Extract
+[17548] 	- arguments: installer://com.nktphotonics.sw.sdk.generic/17.0.0.209Generic User Interface.7z, C:/Users/Public/Documents/NKT Photonics/SDK
+[17548] Started
+[17548] backup com.nktphotonics.sw.sdk.silabs concurrent operation: Extract
+[17548] 	- arguments: installer://com.nktphotonics.sw.sdk.silabs/11.2.0.167Silabs.7z, C:/Users/Public/Documents/NKT Photonics/SDK
+[17548] Started
+[17575] Unpacking components...
+[17575] perform com.nktphotonics.sw.sdk.generic concurrent operation: Extract
+[17575] 	- arguments: installer://com.nktphotonics.sw.sdk.generic/17.0.0.209Generic User Interface.7z, C:/Users/Public/Documents/NKT Photonics/SDK
+[17575] Started
+[17577] perform com.nktphotonics.sw.sdk concurrent operation: Extract
+[17577] 	- arguments: installer://com.nktphotonics.sw.sdk/2.1.15.2102NKTPDLL.7z, C:/Users/Public/Documents/NKT Photonics/SDK
+[17577] Started
+[17577] perform com.nktphotonics.sw.sdk concurrent operation: Extract
+[17577] 	- arguments: installer://com.nktphotonics.sw.sdk/2.1.15.2102Examples.7z, C:/Users/Public/Documents/NKT Photonics/SDK
+[17577] Started
+[17579] perform com.nktphotonics.sw.sdk.silabs concurrent operation: Extract
+[17579] 	- arguments: installer://com.nktphotonics.sw.sdk.silabs/11.2.0.167Silabs.7z, C:/Users/Public/Documents/NKT Photonics/SDK
+[17579] Started
+[17579] perform com.nktphotonics.sw.sdk concurrent operation: Extract
+[17579] 	- arguments: installer://com.nktphotonics.sw.sdk/2.1.15.2102content.7z, C:/Users/Public/Documents/NKT Photonics/SDK
+[17579] Started
+[17582] perform com.nktphotonics.sw.sdk concurrent operation: Extract
+[17582] 	- arguments: installer://com.nktphotonics.sw.sdk/2.1.15.2102LabView.7z, C:/Users/Public/Documents/NKT Photonics/SDK
+[17582] Started
+[17583] perform com.nktphotonics.sw.sdk concurrent operation: Extract
+[17583] 	- arguments: installer://com.nktphotonics.sw.sdk/2.1.15.2102Register Files.7z, C:/Users/Public/Documents/NKT Photonics/SDK
+[17583] Started
+[22951] Installing component NKTP SDK Content
+[22952] Starting elevated process "C:\\Users\\Experiment\\Downloads\\SDK Current\\SDK_Installer_2.1.15.2102.exe" with arguments " --start-server PRODUCTION,{9d030e4f-9c35-4bf2-b65d-79fa1183e3bf},{b3e117fd-8c3f-4308-82bf-226c2c2f659a}"
+[30855] Finished starting elevated process.
+[31070] "CreateShortcut" as admin: true
+[31070] backup com.nktphotonics.sw.sdk operation: CreateShortcut
+[31070] 	- arguments: C:/Users/Public/Documents/NKT Photonics/SDK\maintenancetool.exe, C:\ProgramData\Microsoft\Windows\Start Menu\Programs\NKT Photonics\SDK\SDK Uninstall.lnk, workingDirectory=C:/Users/Public/Documents/NKT Photonics/SDK
+[31083] Done
+[31084] perform com.nktphotonics.sw.sdk operation: CreateShortcut
+[31084] 	- arguments: C:/Users/Public/Documents/NKT Photonics/SDK\maintenancetool.exe, C:\ProgramData\Microsoft\Windows\Start Menu\Programs\NKT Photonics\SDK\SDK Uninstall.lnk
+[31274] Done
+[31274] "CreateShortcut" as admin: true
+[31274] backup com.nktphotonics.sw.sdk operation: CreateShortcut
+[31274] 	- arguments: C:/Users/Public/Documents/NKT Photonics/SDK\SDK Instruction manual.pdf, C:\ProgramData\Microsoft\Windows\Start Menu\Programs\NKT Photonics\SDK\SDK Instruction manual.lnk, workingDirectory=C:/Users/Public/Documents/NKT Photonics/SDK
+[31278] Done
+[31279] perform com.nktphotonics.sw.sdk operation: CreateShortcut
+[31279] 	- arguments: C:/Users/Public/Documents/NKT Photonics/SDK\SDK Instruction manual.pdf, C:\ProgramData\Microsoft\Windows\Start Menu\Programs\NKT Photonics\SDK\SDK Instruction manual.lnk
+[31398] Done
+[31398] "CreateShortcut" as admin: true
+[31398] backup com.nktphotonics.sw.sdk operation: CreateShortcut
+[31398] 	- arguments: C:/Users/Public/Documents/NKT Photonics/SDK\NKTPDLL\NKTPDLL Reference manual.pdf, C:\ProgramData\Microsoft\Windows\Start Menu\Programs\NKT Photonics\SDK\NKTPDLL Reference manual.lnk, workingDirectory=C:/Users/Public/Documents/NKT Photonics/SDK\NKTPDLL
+[31402] Done
+[31403] perform com.nktphotonics.sw.sdk operation: CreateShortcut
+[31403] 	- arguments: C:/Users/Public/Documents/NKT Photonics/SDK\NKTPDLL\NKTPDLL Reference manual.pdf, C:\ProgramData\Microsoft\Windows\Start Menu\Programs\NKT Photonics\SDK\NKTPDLL Reference manual.lnk
+[31446] Done
+[31446] "CreateShortcut" as admin: true
+[31446] backup com.nktphotonics.sw.sdk operation: CreateShortcut
+[31446] 	- arguments: C:/Users/Public/Documents/NKT Photonics/SDK, C:\ProgramData\Microsoft\Windows\Start Menu\Programs\NKT Photonics\SDK\SDK Folder.lnk, workingDirectory=C:/Users/Public/Documents/NKT Photonics/SDK
+[31449] Done
+[31450] perform com.nktphotonics.sw.sdk operation: CreateShortcut
+[31450] 	- arguments: C:/Users/Public/Documents/NKT Photonics/SDK, C:\ProgramData\Microsoft\Windows\Start Menu\Programs\NKT Photonics\SDK\SDK Folder.lnk
+[31487] Done
+[31487] "EnvironmentVariable" as admin: true
+[31487] backup com.nktphotonics.sw.sdk operation: EnvironmentVariable
+[31487] 	- arguments: NKTP_SDK_PATH, C:\Users\Public\Documents\NKT Photonics\SDK, true, true
+[31487] Done
+[31487] perform com.nktphotonics.sw.sdk operation: EnvironmentVariable
+[31487] 	- arguments: NKTP_SDK_PATH, C:\Users\Public\Documents\NKT Photonics\SDK, true, true
+[32094] Done
+[32097] Installing component NKTP SDK Generic UI
+[32098] "Execute" as admin: true
+[32098] backup com.nktphotonics.sw.sdk.generic operation: Execute
+[32101] 	- arguments: {0,3010}, C:/Users/Public/Documents/NKT Photonics/SDK\Generic User Interface\setup.exe, workingdirectory=C:/Users/Public/Documents/NKT Photonics/SDK\Generic User Interface\, UNDOEXECUTE, wmic.exe, product, where, (name="Generic User Interface"), call, uninstall
+[32101] Done
+[32102] perform com.nktphotonics.sw.sdk.generic operation: Execute
+[32104] 	- arguments: {0,3010}, C:/Users/Public/Documents/NKT Photonics/SDK\Generic User Interface\setup.exe, workingdirectory=C:/Users/Public/Documents/NKT Photonics/SDK\Generic User Interface\, UNDOEXECUTE, wmic.exe, product, where, (name="Generic User Interface"), call, uninstall
+[32109] ElevatedExecuteOperation setWorkingDirectory: "C:/Users/Public/Documents/NKT Photonics/SDK\\Generic User Interface\\"
+[32504] C:/Users/Public/Documents/NKT Photonics/SDK\\Generic User Interface\\setup.exe" started, arguments: "
+[136762] Done
+[136763] "LinkReplace" as admin: true
+[136763] backup com.nktphotonics.sw.sdk.generic operation: LinkReplace
+[136763] 	- arguments: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Generic User Interface.lnk, Register file path.txt, , C:\Users\Public\Documents\NKT Photonics\SDK\Register Files
+[136763] Done
+[136764] perform com.nktphotonics.sw.sdk.generic operation: LinkReplace
+[136764] 	- arguments: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Generic User Interface.lnk, Register file path.txt, , C:\Users\Public\Documents\NKT Photonics\SDK\Register Files
+[136788] Done
+[136793] Installing component NKTP SDK Silabs driver
+[136794] "Execute" as admin: true
+[136794] backup com.nktphotonics.sw.sdk.silabs operation: Execute
+[136795] 	- arguments: C:\WINDOWS\sysnative\pnputil.exe, -i, -a, silabser.inf, workingdirectory=C:/Users/Public/Documents/NKT Photonics/SDK\Silabs\1130
+[136795] Done
+[136795] perform com.nktphotonics.sw.sdk.silabs operation: Execute
+[136797] 	- arguments: C:\WINDOWS\sysnative\pnputil.exe, -i, -a, silabser.inf, workingdirectory=C:/Users/Public/Documents/NKT Photonics/SDK\Silabs\1130
+[136799] ElevatedExecuteOperation setWorkingDirectory: "C:/Users/Public/Documents/NKT Photonics/SDK\\Silabs\\1130"
+[136894] C:\\WINDOWS\\sysnative\\pnputil.exe" started, arguments: "-i -a silabser.inf
+[138212] Done
+[138226] Writing maintenance tool: "C:/Users/Public/Documents/NKT Photonics/SDK/maintenancetool.exe.new"
+[138226] Writing maintenance tool.
+[138707] Wrote permissions for maintenance tool.
+[138927] Maintenance tool hard restart: false.
+[138931] Installation finished!

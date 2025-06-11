@@ -1,0 +1,11 @@
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_VB_Callback\DLL_Example_VB_Callback\obj\Debug\DLL_Example_VB_Callback.vbproj.AssemblyReference.cache
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_VB_Callback\DLL_Example_VB_Callback\obj\Debug\DLL_Example_VB_Callback.Form1.resources
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_VB_Callback\DLL_Example_VB_Callback\obj\Debug\DLL_Example_VB_Callback.Resources.resources
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_VB_Callback\DLL_Example_VB_Callback\obj\Debug\DLL_Example_VB_Callback.vbproj.GenerateResource.cache
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_VB_Callback\DLL_Example_VB_Callback\obj\Debug\DLL_Example_VB_Callback.vbproj.CoreCompileInputs.cache
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_VB_Callback\DLL_Example_VB_Callback\bin\Debug\DLL_Example_VB_Callback.exe
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_VB_Callback\DLL_Example_VB_Callback\bin\Debug\DLL_Example_VB_Callback.pdb
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_VB_Callback\DLL_Example_VB_Callback\bin\Debug\DLL_Example_VB_Callback.xml
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_VB_Callback\DLL_Example_VB_Callback\obj\Debug\DLL_Example_VB_Callback.exe
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_VB_Callback\DLL_Example_VB_Callback\obj\Debug\DLL_Example_VB_Callback.xml
+C:\Qt\Projects\NKTP-SDK-Devops\Examples\DLL_Example_VB_Callback\DLL_Example_VB_Callback\obj\Debug\DLL_Example_VB_Callback.pdb
