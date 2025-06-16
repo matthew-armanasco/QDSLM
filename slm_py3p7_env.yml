@@ -1,4 +1,4 @@
-name: python3p7
+name: slm_py3p7_env
 channels:
   - defaults
 dependencies:
