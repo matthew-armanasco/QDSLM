@@ -1,0 +1,51 @@
+name: slm_py3p9_32_env
+channels:
+  - defaults
+dependencies:
+  - asttokens=2.0.5=pyhd3eb1b0_0
+  - backcall=0.2.0=pyhd3eb1b0_0
+  - ca-certificates=2022.4.26=h9f7ea03_0
+  - certifi=2022.6.15=py39h9f7ea03_0
+  - colorama=0.4.4=pyhd3eb1b0_0
+  - debugpy=1.5.1=py39h6986bd8_0
+  - decorator=5.1.1=pyhd3eb1b0_0
+  - entrypoints=0.4=py39h9f7ea03_0
+  - executing=0.8.3=pyhd3eb1b0_0
+  - ipykernel=6.9.1=py39h9f7ea03_0
+  - ipython=8.3.0=py39h9f7ea03_0
+  - jedi=0.18.1=py39h9f7ea03_1
+  - jupyter_client=7.2.2=py39h9f7ea03_0
+  - jupyter_core=4.10.0=py39h9f7ea03_0
+  - matplotlib-inline=0.1.2=pyhd3eb1b0_2
+  - nest-asyncio=1.5.5=py39h9f7ea03_0
+  - openssl=1.1.1o=hc431981_0
+  - parso=0.8.3=pyhd3eb1b0_0
+  - pickleshare=0.7.5=pyhd3eb1b0_1003
+  - pip=25.1=pyhc872135_2
+  - prompt-toolkit=3.0.20=pyhd3eb1b0_0
+  - pure_eval=0.2.2=pyhd3eb1b0_0
+  - pygments=2.11.2=pyhd3eb1b0_0
+  - python=3.9.12=h53c7b84_0
+  - python-dateutil=2.8.2=pyhd3eb1b0_0
+  - pywin32=302=py39hc431981_2
+  - pyzmq=22.3.0=py39h6986bd8_2
+  - setuptools=61.2.0=py39h9f7ea03_0
+  - six=1.16.0=pyhd3eb1b0_1
+  - sqlite=3.38.3=hc431981_0
+  - stack_data=0.2.0=pyhd3eb1b0_0
+  - tornado=6.1=py39hc431981_0
+  - traitlets=5.1.1=pyhd3eb1b0_0
+  - vc=14.2=h21ff451_1
+  - vs2015_runtime=14.27.29016=h5e58377_2
+  - wcwidth=0.2.5=pyhd3eb1b0_0
+  - wheel=0.37.1=pyhd3eb1b0_0
+  - wincertstore=0.2=py39h9f7ea03_2
+  - pip:
+    - numpy==1.24.4
+    - pandas==2.0.3
+    - pyanc350==0.9.1
+    - pytz==2025.2
+    - scipy==1.9.1
+    - tzdata==2025.2
+    - vswhere==1.4.0
+prefix: C:\Users\Experiment\miniconda3\envs\slm_py3p9_32_env
